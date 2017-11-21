@@ -6,10 +6,20 @@ import otherclasses.Person;
 
 public class PersonTest {
 
+	
 	@Test
-	public void test() {
+	public void testGettersAndSetters() {
 		Person p = new Person("Rafael", "Silva", 30,'M');
-		assertEquals(p.getFirstName().equals("Rafael"),true);
+		p.setFirstName("Erik");
+		p.setLastName("Edlund");
+		p.setAge(26);
+		p.setGender('M');
+		assertEquals(p.getFirstName().equals("Erik"),true);
+		assertEquals(p.getLastName().equals("Edlund"),true);
+		assertEquals(p.getAge(),26);
+		assertEquals(p.getGender(),'M');
 	}
+	
+	
 
 }
