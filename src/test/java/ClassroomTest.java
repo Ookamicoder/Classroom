@@ -38,6 +38,30 @@ public class ClassroomTest {
 		assertEquals(classroom.getStudents(),students);
 	}
 	
+	@Test
+	public void testRemoveAStudent() {
+		classroom.addANewStudent(student1);
+		classroom.addANewStudent(student2);
+		classroom.addANewStudent(student3);
+		classroom.addANewStudent(student4);
+		classroom.addANewStudent(student5);
+		classroom.removeAStudent("Hans");
+		classroom.removeAStudent("Erik");
+		assertEquals(classroom.getStudents().contains("Hans"),false);
+		assertEquals(classroom.getStudents().contains("Erik"),false);
+	}
+	
+	@Test
+	public void testPrintFullRelatory() {
+		classroom.addANewStudent(student1);
+		classroom.addANewStudent(student2);
+		classroom.addANewStudent(student3);
+		classroom.addANewStudent(student4);
+		classroom.addANewStudent(student5);
+		classroom.printFullRelatory();
+
+	}
+	
 	
 
 }
