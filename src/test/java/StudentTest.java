@@ -1,4 +1,4 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -76,6 +76,7 @@ public class StudentTest {
 		
 		System.out.println(student.toString());
 		System.out.println(student2.toString());
+		
 		
 	}
 	
